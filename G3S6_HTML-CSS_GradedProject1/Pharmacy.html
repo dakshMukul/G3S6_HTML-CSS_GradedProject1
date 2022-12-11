@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>
+    <title>Pharmacy</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        header h1{
+            background-color: rgb(81, 80, 80);
+            margin: 0%;
+            padding: 30px;
+            
+            text-align: center;
+            color: white;
+        }
+        header h2{
+            text-align: left;
+            color: black;
+        }
+        #navigate{
+            position: static;
+            top:0%;
+
+        }
+        .menu{
+            margin: 0%;
+            width: auto;
+            background-color: grey;
+            visibility: visible;
+            z-index: 100;
+        }
+        .menu li a{
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            visibility: visible;
+            z-index: 100;
+        }
+        .menu li{
+            padding: 10px;
+            display: inline-block;
+            visibility: visible;
+            z-index: 100;
+        }
+        .menu li:hover{
+            background-color: black;
+            visibility: visible;
+            z-index: 100;
+        }
+        .menu li:nth-child(2):hover #Dropdown_1, .menu li:nth-child(3):hover #Dropdown_2{
+            display: block;
+            visibility: visible;
+            z-index: 100;
+        }
+        #Dropdown_1, #Dropdown_2, #Dropdown_3{
+            position: absolute;
+            width: auto;
+            display: none;
+            background-color: white;
+            padding: 10px;
+            visibility: visible;
+            z-index: 100;
+        }
+        #Dropdown_1 li, #Dropdown_2 li, #Dropdown_3 li {
+            display: block;
+            visibility: visible;
+            z-index: 100;
+
+        }
+        #Dropdown_1 li:hover, #Dropdown_2 li:hover, #Dropdown_3 li:hover{
+            background-color: antiquewhite;
+            visibility: visible;
+            z-index: 100;
+        }
+        #Dropdown_1 li a, #Dropdown_2 li a, #Dropdown_3 li a{
+            color: blue;
+            font-size: 16px;
+            visibility: visible;
+            z-index: 100;
+        }
+        #footer{
+            position: fixed;
+            padding: 10px;
+            bottom: 0;
+            background-color: black;
+            margin: 0%;
+            width: 100%;
+            max-width: 100%;
+            padding: 10px;
+            text-align: center;
+            color: white; 
+            overflow: hidden;
+        }
+        .container{
+
+            margin: 0px;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            /*top:47.2%;
+            left:50%;
+            transform: translate(-100%,-40%);*/
+            border:10px steelblue;
+            border-style: 6px;
+            overflow: hidden;
+        }
+        .img-container{
+            width:100vw;
+            display: flex;
+            animation: slide 16s infinite;
+
+        }
+        img{
+            margin: 0px;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        @keyframes slide{
+            0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(0);
+            }
+            30%{
+                transform: translateX(-100%);
+            }
+            50%{
+                transform: translateX(-100%);
+            }
+            55%{
+                transform:  translateX(-200%);
+            }
+            75%{
+                transform: translateX(-200%);
+            }
+            80%{
+                transform: translateX(-300%);
+            }
+            100%{
+                transform: translateX(-300%);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Pharmacy</h1></header>
+    <nav id="navigate">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Our Medicines</a>
+                <ul id="Dropdown_1">
+                    <li><a href="#">Feaver</a></li>
+                    <li><a href="#">Muscle Pains</a></li>
+                    <li><a href="#">Cold and cough</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Health Care</a>
+                <ul id="Dropdown_2">
+                    <li><a href="#">Baby Care</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Home Care</a></li>
+                    <li><a href="#">Personal Care</a></li>
+                    <li><a href="#">Pet Care</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Lab_test_form.html">Lab test</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="img-container">
+            <img src="Animation/ani1.jpg">
+            <img src="Animation/ani2.png">
+            <img src="Animation/ani3.jpg">
+            <img src="Animation/ani4.jpg">
+            <img src="Animation/ani5.jpg">
+        </div>
+    </div>
+    <br>
+    <h2>Covid Care</h2>
+    <section class="items">
+        <div class="item">
+            <h3>Covid Test Kit</h3>
+            <img src="Products/c1.jpg">
+            <br>
+            <p>Rs. 40/-</p><br>
+            <p>Offer: Rs. 30/-</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+    <div id="footer">@copyright. Only for demonstartion purposes</div>
+</body>

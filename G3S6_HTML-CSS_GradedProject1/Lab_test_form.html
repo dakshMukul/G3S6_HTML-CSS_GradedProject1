@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>Lab test Form</title>
+    <link rel="stylesheet" href="CSS/Lab_test_form.css">
+</head>
+<body>
+    <section id = "block">
+        <div>
+            <form action="" id="Lab-form">
+                <h1>1. Your Contact Details</h1>
+                <input type="text" title="Full Name" name="fname" placeholder="Full Name" required>
+                <input type="number" title="Patient Id if exists" name="pid" placeholder="Patient Id if exists">
+                <br>
+                <input type="number" title="Contact Number" name="Contact number" min="6000000000" max="9999999999" placeholder="Contact Number" required>
+                <input type="email" title="Email Id" name = "emailId" placeholder="Email Id" required>
+                <br>
+                <h1>2. Address</h1>
+                <input type="text" title="H-No" name="houseNumber" placeholder="H-No" required>
+                <input type="text" title="Street" name="Street" placeholder="Street" required>
+                <br>
+                <input type="text" title="Area" name="Area" placeholder="Area" required>
+                <br>
+                <label >District</label>
+                <br>
+                <select>
+                    <option value= "Choose">Choose</option>
+                    <option value= "Vizag">Vizag</option>
+                    <option value= "East-godaveri">East-godaveri</option>
+                    <option value= "West-godaveri">West-godaveri</option>
+                </select>
+                <br>
+                <h1>3.Do you want a hard copy of the report also?</h1>
+                <input style="width: 50px;" type="checkbox">Yes
+                <input style="width: 50px;" type="checkbox">No
+                <br>
+                <h1>4.Select Your Comfortable Date and Time</h1>
+                <input type="date">
+                <br>
+                <button form="lab-form">Reset</button>
+                <button form="lab-form">Submit</button>
+            </form>
+        </div>
+    </section>
+    <div class="container">
+        <div class="img-container">
+            <img src="Lab-Test/lab-test.jpg">
+        </div>
+    </div>
+</body>
